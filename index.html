@@ -6,11 +6,32 @@
     <title>Document</title>
     <link rel="shortcut icon" href="istockphoto-1131312559-1024x1024.jpg" type="image/x-icon">
 </head>
+<link rel="stylesheet" href="style.css">
 <body>
-    <video width="420" height="340" controls autoplay autofill>
+    <video autoplay="" controls webkit-playsinline="" width="100%" height="100%" muted loop id="myVideo">
         <source src="WhatsApp Video 2023-10-16 at 05.19.39.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
+        <source src="WhatsApp Video 2023-10-06 at 02.10.57.mp4" type="video/mp4">
     
       </video>
+      <div class="content">
+        <h1>Independence</h1>
+       <p> <p>On 24 October 1964, Zambia became independent of the United Kingdom and prime minister Kenneth Kaunda became the inaugural president. Kaunda's socialist United National Independence Party (UNIP) maintained power from 1964 until 1991.</p></p>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+      </div>
+      
+      <script>
+      var video = document.getElementById("myVideo");
+      var btn = document.getElementById("myBtn");
+      
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+          
+        }}
+        </script>
 </body>
 </html>
