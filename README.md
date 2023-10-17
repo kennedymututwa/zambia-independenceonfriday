@@ -1,1 +1,1 @@
-# zambia-independenceonfriday
+.# zambia-independenceonfriday
